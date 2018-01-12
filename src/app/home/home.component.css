@@ -1,6 +1,11 @@
 .image-container{
     position: relative;
   }
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 505px;
+}
   #image {
     position: absolute;
     left: 0;
@@ -32,8 +37,15 @@
     font-size: 30px;
     color:#ffffff;
   }
+  .btn-primary{
+    margin-top: 20px;
+  }
+ 
   @media screen and (min-width: 547px) {
-      #image{
+      #image, .container-fluid{
           height: 410px;
+      }
+      .city-select{
+        width: 50%;
       }
   }
