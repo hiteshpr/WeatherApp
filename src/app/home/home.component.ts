@@ -15,10 +15,19 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
   selected: string;
   states: string[] = [];
   
+  public userSettings2: any = {
+    showCurrentLocation:false,
+    inputPlaceholderText: 'Enter City Name'
+  };
+
+
+  autoCompleteCallback1(selectedData:any) {
+		//do any necessery stuff.
+	}
   
   // states: string[] = [
   //   'Alabama',

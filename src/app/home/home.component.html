@@ -19,8 +19,7 @@
 
 <div class="container city-select" style="margin-top: 50px;">
  
-    <input [(ngModel)]="selected"
-          [typeahead]="states" class="form-control" placeholder="City Name"  >
+  <ng4geo-autocomplete (componentCallback)="autoCompleteCallback1($event)" [userSettings]="userSettings2" ></ng4geo-autocomplete>
     <button type="btn" class="btn btn-primary">Submit</button>
   
 </div>

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Component,NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpModule} from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { TypeaheadModule } from 'ngx-bootstrap';
+import { Ng4GeoautocompleteModule } from 'ng4-geoautocomplete';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { TypeaheadModule } from 'ngx-bootstrap';
     BrowserModule,
     AppRoutingModule,
     FormsModule,HttpClientModule, HttpModule,
-    CollapseModule.forRoot(), BsDropdownModule.forRoot(),TypeaheadModule.forRoot()
+    CollapseModule.forRoot(), BsDropdownModule.forRoot(),TypeaheadModule.forRoot(),Ng4GeoautocompleteModule.forRoot()
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]

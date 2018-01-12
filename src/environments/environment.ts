@@ -5,5 +5,4 @@
 
 export const environment = {
   production: false,
-  googleAppKey : 'AIzaSyBe9WI61dZV7tSkDPVxXKT7aZnnPXw7wPQ', 
 };
