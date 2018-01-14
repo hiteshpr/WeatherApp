@@ -15,72 +15,29 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+ 
   selected: string;
-  states: string[] = [];
-  
+  citySelectError:boolean;
+
   public userSettings2: any = {
-    showCurrentLocation:false,
     inputPlaceholderText: 'Enter City Name'
   };
 
 
-  autoCompleteCallback1(selectedData:any) {
-		//do any necessery stuff.
+  citySelected(selectedData:any) {
+    this.citySelectError = false;    
+    this.selected=selectedData.data.name;
 	}
   
-  // states: string[] = [
-  //   'Alabama',
-  //   'Alaska',
-  //   'Arizona',
-  //   'Arkansas',
-  //   'California',
-  //   'Colorado',
-  //   'Connecticut',
-  //   'Delaware',
-  //   'Florida',
-  //   'Georgia',
-  //   'Hawaii',
-  //   'Idaho',
-  //   'Illinois',
-  //   'Indiana',
-  //   'Iowa',
-  //   'Kansas',
-  //   'Kentucky',
-  //   'Louisiana',
-  //   'Maine',
-  //   'Maryland',
-  //   'Massachusetts',
-  //   'Michigan',
-  //   'Minnesota',
-  //   'Mississippi',
-  //   'Missouri',
-  //   'Montana',
-  //   'Nebraska',
-  //   'Nevada',
-  //   'New Hampshire',
-  //   'New Jersey',
-  //   'New Mexico',
-  //   'New York',
-  //   'North Dakota',
-  //   'North Carolina',
-  //   'Ohio',
-  //   'Oklahoma',
-  //   'Oregon',
-  //   'Pennsylvania',
-  //   'Rhode Island',
-  //   'South Carolina',
-  //   'South Dakota',
-  //   'Tennessee',
-  //   'Texas',
-  //   'Utah',
-  //   'Vermont',
-  //   'Virginia',
-  //   'Washington',
-  //   'West Virginia',
-  //   'Wisconsin',
-  //   'Wyoming'
-  // ];
+  displayWeather(){
+    
+    if(this.selected){
+      this.citySelectError = false;
 
+
+    }else {
+      this.citySelectError = true;
+    }
+  }
 
 }

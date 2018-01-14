@@ -19,7 +19,8 @@
 
 <div class="container city-select" style="margin-top: 50px;">
  
-  <ng4geo-autocomplete (componentCallback)="autoCompleteCallback1($event)" [userSettings]="userSettings2" ></ng4geo-autocomplete>
-    <button type="btn" class="btn btn-primary">Submit</button>
+  <ng4geo-autocomplete  (componentCallback)="citySelected($event)" [userSettings]="userSettings2" ></ng4geo-autocomplete>
+    <button type="btn" class="btn btn-primary" (click)="displayWeather()" >Submit</button>
+    <span *ngIf="citySelectError" class="alert-danger"> Please select city name </span>
   
 </div>
