@@ -1,27 +1,41 @@
+# Communication Channel
+Slack - weatherapp-hq.slack.com
+
 # WeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+This is a simple and intutive waether App purely made in Angular 2 and then shifted to Angular 4.
+It detects the user's location or user can also add different location names in the text box provided. 
+The text box is autofill and suggest names of places when user starts entering locations name.
+The App then displays all the weather information like temperature, wind, humidity etc and also displays forcast of next 5 days.
 
-## Development server
+For accessing the weather data, OpenWeatherMap's REST APIs are used.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting your copy
 
-## Code scaffolding
+Fork this project to form a local copy of this project for your access.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running in Local
 
-## Build
+Clone the your forked repository into the folder and go the WeatherApp folder. Now run 'npm install' to install the required node modules. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Running unit tests
+## Making Changes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To make changes it is advisable that you should checkout your own branch from the master branch. Preferrably name the branch same as the feature you are implementing or bug you are solving. Go to that branch and start working.
 
-## Running end-to-end tests
+Fixed bugs or developed a new feature ? 
+Awesome!
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Now let everyone know about it!
 
-## Further help
+Create a Pull Request(PR).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Create PR
+Commit your local changes and add good commit message.
+Then push the commit to the origin i.e your repository on github.
+Then you will see a option to open a pull request. Click on it and done!
+Congrats. You successfully created your first pull request.
+
+
+
