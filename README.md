@@ -3,10 +3,10 @@ Slack - weatherapp-hq.slack.com
 
 # WeatherApp
 
-This is a simple and intutive waether App purely made in Angular 2 and then shifted to Angular 4.
-It detects the user's location or user can also add different location names in the text box provided. 
-The text box is autofill and suggest names of places when user starts entering locations name.
-The App then displays all the weather information like temperature, wind, humidity etc and also displays forcast of next 5 days.
+A intuitive app made in Angular 2 and then shifted to Angular 4.
+It detects the user's location or user can add different location names in the text box provided. 
+The text box is autofill and provides suggestion.
+The App then displays all the weather information like temperature, wind, humidity etc and also displays forcast for the next 5 days.
 
 For accessing the weather data, OpenWeatherMap's REST APIs are used.
 
